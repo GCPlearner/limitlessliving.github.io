@@ -1,157 +1,110 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness Alchemist - Transforming Lives, One Rep at a Time</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #0a1921;
-            color: #e2e8f0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .accent-color {
-            color: #84cc16;
-        }
-        .accent-bg {
-            background-color: #84cc16;
-        }
-        .service-card {
-            transition: transform 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        .testimonial-card {
-            transition: all 0.3s ease;
-        }
-        .testimonial-card:hover {
-            box-shadow: 0 10px 15px -3px rgba(132, 204, 22, 0.4);
-        }
-        .nav-link {
-            position: relative;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #84cc16;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-        }
-        .nav-link.active::after {
-            width: 100%;
-        }
-        .btn {
-            transition: all 0.3s ease;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px -1px rgba(132, 204, 22, 0.4);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Limitless Living</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+      color: #333;
+    }
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 2em;
+      text-align: center;
+    }
+    section {
+      padding: 2em;
+    }
+    form {
+      background: white;
+      padding: 2em;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .testimonial {
+      background-color: #ffffff;
+      padding: 1em;
+      margin: 1em 0;
+      border-left: 4px solid #4caf50;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <header class="bg-gray-900 py-4">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col sm:flex-row justify-between items-center">
-                <div class="flex items-center mb-4 sm:mb-0">
-                    <div class="w-16 h-16 bg-gray-800 rounded-md flex items-center justify-center">
-                        <span class="text-2xl accent-color"><i class="fas fa-dumbbell"></i></span>
-                    </div>
-                    <div class="ml-4">
-                        <h1 class="text-xl font-bold">Fitness Alchemist</h1>
-                    </div>
-                </div>
-                <nav>
-                    <ul class="flex space-x-6">
-                        <li><a href="#" class="nav-link active">HOME</a></li>
-                        <li><a href="#services" class="nav-link">SERVICES</a></li>
-                        <li><a href="#testimonials" class="nav-link">TESTIMONIALS</a></li>
-                        <li><a href="#about" class="nav-link">ABOUT US</a></li>
-                        <li><a href="#contact" class="nav-link">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="py-20 bg-gray-800 bg-opacity-50">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Fitness Alchemist</h1>
-            <p class="text-xl md:text-2xl mb-8">Transforming Lives, One Rep at a Time</p>
-            <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto">
-                <span class="accent-color font-semibold">14+ years</span> crafting fitness miracles | 
-                <span class="accent-color font-semibold">4+ years</span> rewiring minds for success
-            </p>
-            <div class="flex justify-center">
-                <a href="#contact" class="btn accent-bg text-gray-900 font-bold py-3 px-8 rounded-full text-lg">
-                    START YOUR JOURNEY
-                </a>
-            </div>
-        </div>
-    </section>
+<header>
+  <h1>Limitless Living</h1>
+  <p>Empowering Self-Mastery Through Mind, Body & Soul</p>
+</header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-800">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">Get in Touch</h2>
-                <div class="w-24 h-1 accent-bg mx-auto"></div>
-            </div>
-            <!-- Contact Form -->
-            <div class="max-w-4xl mx-auto">
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-gray-900 p-8 rounded-lg shadow-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <!-- Name Field -->
-                        <div class="col-span-1">
-                            <label for="name" class="block text-sm font-bold mb-2">Name:</label>
-                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-color">
-                        </div>
-                        <!-- Email Field -->
-                        <div class="col-span-1">
-                            <label for="email" class="block text-sm font-bold mb-2">Email:</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-color">
-                        </div>
-                    </div>
-                    <!-- Message Field -->
-                    <div class="mb-6">
-                        <label for="message" class="block text-sm font-bold mb-2">Message:</label>
-                        <textarea id="message" name="message" rows="6" required class="w-full px-4 py-2 rounded-lg bg-gray-800 text-gray-200 focus:outline-none focus:ring-2 focus:ring-accent-color"></textarea>
-                    </div>
-                    <!-- Submit Button -->
-                    <div class="text-center">
-                        <button type="submit" class="btn accent-bg text-gray-900 font-bold py-3 px-8 rounded-full text-lg">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <!-- WhatsApp Contact -->
-            <div class="text-center mt-12">
-                <p class="text-lg mb-4">Prefer WhatsApp?</p>
-                <a href="https://wa.me/6582331846" target="_blank" class="btn accent-bg text-gray-900 font-bold py-3 px-8 rounded-full text-lg">
-                    Chat with Us on WhatsApp
-                </a>
-            </div>
-            <!-- Google Calendar Booking -->
-            <div class="text-center mt-12">
-                <p class="text-lg mb-4">Book an Appointment Directly:</p>
-                <iframe 
-                    src="https://calendar.google.com/calendar/embed?src=yongpingbryan@gmail.com&ctz=Asia/Singapore" 
-                    style="border: 0" width="100%" height="600" frameborder="0" scrolling="no">
-                </iframe>
-            </div>
-        </div>
-    </section>
+<section>
+  <h2>About Me</h2>
+  <p>
+    I'm Yong Ping, your certified Metabody Care Coach. With over 14 years transforming lives through fitness and more than 4 years coaching minds toward limitless living, I combine fitness, nutrition, emotional care, and mindset work to help you live your best life.
+  </p>
+  <ul>
+    <li>NCSF Certified Personal Trainer</li>
+    <li>Diploma in Massage Therapy</li>
+    <li>Diploma in Nutrition, Therapeutics & Health</li>
+    <li>Postgraduate Diploma in Food Science & Technology (Curtin University, Perth)</li>
+    <li>BSc Life Sciences (NUS, Singapore)</li>
+    <li>Certified Mindset & Language Coach</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Client Testimonials</h2>
+  <div class="testimonial">
+    <p><strong>“I lost 10kg in just 10 weeks thanks to Ping’s customized metabolic program. More than a coach, he became a friend and a motivator who believed in me before I believed in myself.”</strong></p>
+    <p>- J. Tan, Educator & Mom</p>
+  </div>
+  <div class="testimonial">
+    <p><strong>“The buddy system changed everything. I had someone to talk to when I felt like giving up. Ping was not just my metabody care coach, he was my partner in transformation.”</strong></p>
+    <p>- A. Lee, Business Executive</p>
+  </div>
+</section>
+
+<section>
+  <h2>Get Your Free Guide: The Basics of Self-Mastery</h2>
+  <p>Sign up below and receive my exclusive guide in your inbox!</p>
+  <form action="https://formspree.io/f/xeqybpky" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="_replyto" required />
+
+    <label for="message">Message (optional):</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="hidden" name="_subject" value="New Lead from Limitless Living Website"/>
+    <button type="submit">Get My Free Guide</button>
+  </form>
+</section>
+
 </body>
 </html>
