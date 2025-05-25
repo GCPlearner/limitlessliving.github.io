@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,102 +8,112 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f4f8;
-      color: #333;
+      background: #f7f7f7;
     }
     header {
       background-color: #4caf50;
       color: white;
-      padding: 2em;
       text-align: center;
+      padding: 2em;
     }
     section {
       padding: 2em;
-    }
-    form {
-      background: white;
-      padding: 2em;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      max-width: 500px;
+      max-width: 800px;
       margin: auto;
     }
-    input, textarea {
+    .form-group {
+      margin-bottom: 1em;
+    }
+    input, textarea, button {
       width: 100%;
-      padding: 10px;
-      margin-top: 10px;
+      padding: 0.7em;
+      margin-top: 0.3em;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 5px;
     }
     button {
       background-color: #4caf50;
       color: white;
-      padding: 10px 20px;
       border: none;
-      border-radius: 4px;
-      margin-top: 10px;
-      cursor: pointer;
     }
     .testimonial {
-      background-color: #ffffff;
+      background: white;
       padding: 1em;
-      margin: 1em 0;
-      border-left: 4px solid #4caf50;
+      margin-bottom: 1em;
+      border-left: 5px solid #4caf50;
+    }
+    .progress-container {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 1em;
+    }
+    .progress-bar {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 0.5em 0;
+      width: 60%; /* Adjust this to show different progress */
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Limitless Living</h1>
-  <p>Empowering Self-Mastery Through Mind, Body & Soul</p>
-</header>
+  <header>
+    <h1>Limitless Living</h1>
+    <p>Empowering you to live a life of fun, fulfillment, and freedom.</p>
+  </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I'm Yong Ping, your certified Metabody Care Coach. With over 14 years transforming lives through fitness and more than 4 years coaching minds toward limitless living, I combine fitness, nutrition, emotional care, and mindset work to help you live your best life.
-  </p>
-  <ul>
-    <li>NCSF Certified Personal Trainer</li>
-    <li>Diploma in Massage Therapy</li>
-    <li>Diploma in Nutrition, Therapeutics & Health</li>
-    <li>Postgraduate Diploma in Food Science & Technology (Curtin University, Perth)</li>
-    <li>BSc Life Sciences (NUS, Singapore)</li>
-    <li>Certified Mindset & Language Coach</li>
-  </ul>
-</section>
+  <section>
+    <h2>Join the Journey</h2>
+    <form action="https://formsubmit.co/yongpingbryan@gmail.com" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message or Area You Need Help With</label>
+        <textarea name="message" rows="4"></textarea>
+      </div>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
-<section>
-  <h2>Client Testimonials</h2>
-  <div class="testimonial">
-    <p><strong>“I lost 10kg in just 10 weeks thanks to Ping’s customized metabolic program. More than a coach, he became a friend and a motivator who believed in me before I believed in myself.”</strong></p>
-    <p>- J. Tan, Educator & Mom</p>
-  </div>
-  <div class="testimonial">
-    <p><strong>“The buddy system changed everything. I had someone to talk to when I felt like giving up. Ping was not just my metabody care coach, he was my partner in transformation.”</strong></p>
-    <p>- A. Lee, Business Executive</p>
-  </div>
-</section>
+  <section>
+    <h2>Self-Mastery Journey</h2>
+    <p>Track your growth towards a limitless life:</p>
+    <div class="progress-container">
+      <div class="progress-bar">60% Complete</div>
+    </div>
+  </section>
 
-<section>
-  <h2>Get Your Free Guide: The Basics of Self-Mastery</h2>
-  <p>Sign up below and receive my exclusive guide in your inbox!</p>
-  <form action="https://formspree.io/f/xeqybpky" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required />
+  <section>
+    <h2>What Others Say</h2>
+    <div class="testimonial">
+      <p>"Bryan's approach helped me unlock clarity and motivation like never before!"</p>
+      <strong>- Michelle T., Educator</strong>
+    </div>
+    <div class="testimonial">
+      <p>"I found the tools I needed to break through limits and take bold steps."</p>
+      <strong>- Darren L., Tech Specialist</strong>
+    </div>
+  </section>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="_replyto" required />
-
-    <label for="message">Message (optional):</label>
-    <textarea id="message" name="message" rows="4"></textarea>
-
-    <input type="hidden" name="_subject" value="New Lead from Limitless Living Website"/>
-    <button type="submit">Get My Free Guide</button>
-  </form>
-</section>
+  <section>
+    <h2>Schedule a Call</h2>
+    <p>Pick a time that works for you:</p>
+    <iframe src="https://calendar.google.com/calendar/embed?src=yongpingbryan%40gmail.com&ctz=Asia%2FSingapore"></iframe>
+  </section>
 
 </body>
 </html>
